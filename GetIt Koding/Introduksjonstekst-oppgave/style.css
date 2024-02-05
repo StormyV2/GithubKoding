@@ -1,0 +1,23 @@
+.background{
+    background-image: url(stars.jpg);
+    background-repeat: no-repeat;
+}
+
+.header1{
+    color: white;
+    border: solid violet;
+    border-radius: 25px;
+    width: 150px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+.pfp{
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
