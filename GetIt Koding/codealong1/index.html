@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="addnum(2)">2</button>
+        <button onclick="addnum(3)">3</button>
+        <button onclick="addnum(9)">9</button>
+    </div>
+    <div id="numshow">
+
+    </div>
+
+    <script>
+        var number=0
+        var numberwin=55
+
+        function addnum(num){
+            number=number+num
+            document.getElementById('numshow').innerHTML=number
+            if(number==numberwin){
+                document.getElementById('numshow').innerHTML='winner'
+            }
+            else if(number>numberwin){
+                document.getElementById('numshow').innerHTML='Loser'
+            }
+        }
+    </script>
+</body>
+</html>

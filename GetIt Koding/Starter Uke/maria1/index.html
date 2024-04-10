@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="namediv">jeg heter</div>
+    <div id="workdiv">jobber på</div>
+    <div id="mealdiv">liker </div>
+
+    <button onclick="setname(this)">amando</button>
+    <button onclick="setname(this)">kasper</button>
+    <button onclick="setname(this)">albert</button>
+
+    <button onclick="setworkplace(this)">rema1000</button>
+    <button onclick="setworkplace(this)">koder</button>
+    <button onclick="setworkplace(this)">mcen</button>
+
+    <button onclick="setfood(this)">pizza</button>
+    <button onclick="setfood(this)">taco</button>
+    <button onclick="setfood(this)">burger</button>
+
+    <script>
+        let name;
+        let workplace;
+        let food;
+
+        function setname(btn){
+            name = btn.innerHTML;
+            console.log(name)
+            updatenamediv()
+        }
+
+        function setworkplace(btn){
+            workplace = btn.innerHTML;
+            updateview()
+
+        }
+
+        function setfood(btn){
+            food = btn.innerHTML;
+            updateview()
+        }
+
+        function updateview(){
+            document.getElementById('namediv').innerHTML = 'jeg heter ' + name;
+            document.getElementById('workdiv').innerHTML = 'jobber på ' + workplace;
+            document.getElementById('mealdiv').innerHTML = 'liker ' + food;
+        }
+
+        function setnamewithstringparam(name){
+            document.getElementById('namediv').innerHTML += name;
+        }
+    </script>
+</body>
+</html>
